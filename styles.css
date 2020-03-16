@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+body {
+  margin: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.landing-right {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff 0%, #fdeddf 100%);
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: 0%;
+  z-index: -2;
+}
+
+#landing {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.landing-left {
+  width: 50vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #99ccff 0%, #74cbcb 100%);
+  position: absolute;
+}
+
+.landing-icons {
+  position: absolute;
+  top: 20px;
+  left: 705px;
+  z-index: 100;
+  width: 100px;
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.landing-icons  img {
+  position: absolute;
+      top: 4.5%;
+      right: 91px;
+      width: 72px;
+}
+
+.landing-left > h1 {
+  font-size: 300px;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  right: -28%;
+  font-family: 'Abril Fatface', cursive;
+  color: white;
+  text-shadow: 2px 4px 4px black;
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  0%   { right:-28%; top:25%; opacity: 1;}
+  100% { right:-600px; top:10%; opacity: 0;}
+}
+
+.landing-left > p {
+  width: 70%;
+  position: absolute;
+  font-size: 22px;
+  position: absolute;
+  top: 20%;
+  left: 14%;
+  color: white;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+  font-family: 'Raleway', sans-serif;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.head {
+  height: 600px;
+  position: absolute;
+  top: 10%;
+  left: 21%;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+  border-radius: 15px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   z-index: -1;
+}
+
+.landing-left > h2 {
+  color: white;
+  font-size: 55px;
+  position: absolute;
+  top: 12%;
+  left: 14%;
+  margin: 0;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+}
+
+.show {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 73%;
+left: -10%;
+width: 700px;
+margin: 0;
+animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s both;
+text-align: center;
+}
+
+.show:hover {
+  cursor: pointer;
+  text-shadow: 2px 4px 4px black;
+}
+
+@keyframes slide-in-left {
+  0% {
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#projects-page {
+  /* background: linear-gradient(to bottom, #66ffcc 0%, #ccffcc 100%); */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  background: linear-gradient(to right, #ec008c, #fc6767);
+}
+
+
+
+.projects-page > h1 {
+  margin: 0;
+  /* font-family: 'Abril Fatface', cursive; */
+  color: white;
+  font-size: 60px;
+  position: relative;
+  top: 35px;
+  left: 42%;
+  display: inline-flex;
+  font-family: 'Permanent Marker', cursive;
+
+  /* text-shadow: 2px 4px 4px black; */
+}
+
+.card-1, .card-2, .card-3 {
+  object-fit: contain;
+  height: auto;
+  width: 400px;
+  text-align: center;
+  box-shadow: 15px 15px 20px 5px rgba(0,0,0,0.1);
+  padding: 5px;
+  padding-bottom: 20px;
+  z-index: 50;
+}
+
+.card-1 {
+  position: absolute;
+  top: 200px;
+  left: 55px;
+}
+
+.card-2 {
+  position: absolute;
+  top: 200px;
+  left: 516px;
+}
+
+.card-3 {
+  position: absolute;
+  top: 200px;
+  left: 970px;
+}
+
+.projects-page img {
+  object-fit: contain;
+  width: 400px;
+  padding-bottom: 10px;
+
+}
+
+.projects-page p {
+  width: 400px;
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  /* background-color: lightgrey; */
+  /* position: relative;
+  left: 320px;
+  bottom: 200px; */
+}
+
+.back > h2 {
+  color: white;
+  font-size: 80px;
+  position: absolute;
+  top: 0%;
+  left: 6%;
+  margin: 0;
+}
+
+.back > h2:hover {
+  cursor: pointer;
+  text-shadow: 2px 4px 4px black;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+            transform: translateX(-8px);
+  }
+  20%,
+  40%,
+  60% {
+            transform: translateX(8px);
+  }
+  80% {
+            transform: translateX(6px);
+  }
+  90% {
+            transform: translateX(-6px);
+  }
+}
+
+
+.projects-page a {
+  color: white;
+  text-decoration: none;
+}
+
+.projects-page a:hover {
+  /* color: lightcoral; */
+}
+
+.fa-linkedin {
+  position: absolute;
+  top: 4.5%;
+  right: 6%;
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background-color: #2477b5;
+  color: white;
+}
+
+.fa-linkedin:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.resume > img {
+  position: absolute;
+  top: 4.5%;
+  right: 167px;
+  width: 72px;
+}
+
+.resume:hover {
+  cursor: pointer;
+}
+
+.fa-envelope {
+  color: white;
+  position: absolute;
+  top: 6%;
+  right: 18%;
+  font-size: 50px;
+}
+
+.fa-envelope:hover {
+  cursor: pointer;
+}
+
+.bonus > h3 {
+  position: absolute;
+  top: 90%;
+  right: 5%;
+  color: white;
+  font-size: 25px;
+}
+
+.bonus > h3:hover {
+  cursor: pointer;
+}
+
+.bonus-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #d66d75, #e29587);
+
+  display: none;
+}
+
+.bonus-page h3 {
+  margin: 0;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+}
+
+.bonus-page h3:hover {
+  cursor: pointer;
+}
+
+.bonus-page > h1 {
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  right: 68%;
+  font-size: 15px;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+.bonus-work {
+  position: absolute;
+  left: 12%;
+  top: 5%;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.bonus-home {
+  position: absolute;
+  left: 80%;
+  top: 5%;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.bonus-grid {
+  width: 800px;
+  height: 500px;
+  box-shadow: 25px 25px 20px 5px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 20%;
+  right: 22%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+  display: block;
+}
+
+.bonus-grid > img {
+  width: 800px;
+  object-fit: contain;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@keyframes tilt-in-top-1 {
+  0% {
+            transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+            transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
